@@ -1,0 +1,33 @@
+{
+    "settings": {
+        "analysis": {
+            "filter": {
+                "created_data": {
+                    "type": "date"
+                }
+            }
+        }
+    },
+    "_source": false,
+    "posts": {
+        "query": {
+            "match": {
+                "contet" : {
+                    "text" : {
+                        "type" : "string"
+                    },
+                    "rubrics": {
+                        "type": "string"
+                    },
+                    "created_data": {
+                        "type": "date"
+                    },
+                    "id": {
+                        "type": "keyword"
+                    }
+               }
+            }
+        }
+    }
+
+}
